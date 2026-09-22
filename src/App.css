@@ -1,0 +1,685 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* home */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: chocolate;
+
+}
+
+.left {
+  margin: 12px;
+}
+
+.right {
+  display: flex;
+  gap: 5px;
+  margin: 12px;
+}
+
+.nav-btn {
+  padding: 12px;
+  background-color: cadetblue;
+  border-radius: 15px;
+}
+
+/* register form */
+.formone {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 20%;
+
+  background-color: azure;
+  align-items: center;
+  height: 70%;
+  padding-top: 50px;
+  border-radius: 10px;
+}
+
+.formRegister {
+  background-color: burlywood;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.divForm {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+
+}
+
+.divForm input {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+form button {
+  padding: 10px;
+  border-radius: 7px;
+}
+
+/*login*/
+.loginFormDiv {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-color: bisque;
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  height: 50%;
+  border-radius: 25px;
+}
+
+.loginDivLabelInput {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+
+.formLogin input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  outline: none;
+}
+
+.formLogin button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.loginDivForgotRegister {
+  display: flex;
+  gap: 5px;
+}
+
+
+
+
+
+.forgot-password-container {
+  background-color: bisque;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.forgot-password-card {
+  background-color: aqua;
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.forgot-password-card h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #666;
+  font-size: 14px;
+}
+
+.forgot-password-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.forgot-password-card label {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.forgot-password-card input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  outline: none;
+}
+
+.forgot-password-card input:focus {
+  border-color: #555;
+}
+
+.error-message {
+  color: red;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.forgot-password-card button {
+  margin-top: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.forgot-password-card button:hover {
+  opacity: 0.9;
+}
+
+
+/* RESET PASSWORD */
+
+.reset-password-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: bisque;
+}
+
+.reset-password-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  background-color: aqua;
+}
+
+.reset-password-card h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.reset-subtitle {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #666;
+  font-size: 14px;
+}
+
+.reset-password-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.reset-password-card label {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.reset-password-card input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 15px;
+  outline: none;
+}
+
+.reset-password-card input:focus {
+  border-color: #555;
+}
+
+.reset-error-message {
+  color: red;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.reset-password-card button {
+  margin-top: 15px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.reset-password-card button:hover {
+  opacity: 0.9;
+}
+
+
+/* TOKEN VERIFICATION STATUS */
+
+.reset-status-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.reset-status-card {
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.reset-status-card h1,
+.reset-status-card h2 {
+  margin-bottom: 15px;
+}
+
+.reset-status-card p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.request-new-link {
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.profile-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  background-color: bisque;
+}
+
+.profile-card {
+  width: 400px;
+  padding: 30px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  background-color: aqua;
+}
+
+.profile-card h1 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.profile-details {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.profile-details p {
+  font-size: 16px;
+  margin: 15px 0;
+}
+
+.profile-details strong {
+  display: inline-block;
+  width: 70px;
+}
+
+/* ================= TABLET ================= */
+
+@media screen and (max-width: 768px) {
+
+  /* Register */
+  .formone {
+    width: 50%;
+    height: auto;
+    min-height: 60%;
+    padding: 40px 20px;
+  }
+
+  /* Login */
+  .formLogin {
+    width: 60%;
+    height: auto;
+    min-height: 50%;
+    padding: 30px 20px;
+  }
+
+  /* Forgot Password */
+  .forgot-password-card {
+    max-width: 450px;
+  }
+
+  /* Reset Password */
+  .reset-password-card {
+    max-width: 450px;
+  }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media screen and (max-width: 480px) {
+
+  /* Navbar */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left {
+    margin: 10px;
+  }
+
+  .right {
+    margin: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .nav-btn {
+    padding: 10px;
+  }
+
+
+  /* Register */
+  .formRegister {
+    padding: 20px;
+  }
+
+  .formone {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    padding: 30px 20px;
+  }
+
+  .divForm {
+    width: 100%;
+  }
+
+
+  /* Login */
+  .loginFormDiv {
+    padding: 20px;
+  }
+
+  .formLogin {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    padding: 30px 20px;
+    border-radius: 15px;
+  }
+
+  .loginDivLabelInput {
+    width: 100%;
+  }
+
+  .loginDivForgotRegister {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+
+  /* Forgot Password */
+  .forgot-password-container {
+    padding: 15px;
+  }
+
+  .forgot-password-card {
+    width: 100%;
+    padding: 25px 20px;
+  }
+
+  .forgot-password-card h2 {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 13px;
+  }
+
+
+  /* Reset Password */
+  .reset-password-container {
+    padding: 15px;
+  }
+
+  .reset-password-card {
+    width: 100%;
+    padding: 25px 20px;
+  }
+
+  .reset-password-card h2 {
+    font-size: 24px;
+  }
+
+  .reset-subtitle {
+    font-size: 13px;
+  }
+
+
+  /* Token Status */
+  .reset-status-container {
+    padding: 15px;
+  }
+
+  .reset-status-card {
+    width: 100%;
+    padding: 25px 20px;
+  }
+
+  .reset-status-card h1 {
+    font-size: 24px;
+  }
+
+  .reset-status-card h2 {
+    font-size: 22px;
+  }
+
+  .reset-status-card p {
+    font-size: 14px;
+  }
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media screen and (max-width: 320px) {
+
+  .formone,
+  .formLogin,
+  .forgot-password-card,
+  .reset-password-card,
+  .reset-status-card {
+    padding: 20px 15px;
+  }
+
+  .forgot-password-card h2,
+  .reset-password-card h2 {
+    font-size: 21px;
+  }
+
+  .forgot-password-card input,
+  .reset-password-card input,
+  .formLogin input,
+  .divForm input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .forgot-password-card button,
+  .reset-password-card button,
+  .formLogin button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+
+.admin-page {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main-side-panel {
+    width: 240px;
+    min-height: 100vh;
+    background-color: #1e293b;
+    color: white;
+    padding: 25px 15px;
+    box-sizing: border-box;
+}
+
+.main-side-panel h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-side-panel nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.main-side-panel button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: transparent;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.main-side-panel button:hover {
+    background-color: #334155;
+}
+
+.admin-content {
+    flex: 1;
+    padding: 30px;
+}
+
+
+
+.dashboard {
+    width: 100%;
+}
+
+.dashboard-header {
+    margin-bottom: 25px;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 30px;
+    color: #1e293b;
+}
+
+.dashboard-header p {
+    margin-top: 8px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+/* Dashboard cards */
+
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.dashboard-card {
+    background-color: white;
+    padding: 25px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.dashboard-card h3 {
+    margin: 0 0 15px;
+    font-size: 14px;
+    color: #64748b;
+}
+
+.dashboard-card h2 {
+    margin: 0;
+    font-size: 25px;
+    color: #2563eb;
+}
+
+
+.users-container {
+    padding: 25px;
+}
+
+.users-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #222;
+}
+
+.users-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.user-card {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.user-card p {
+    margin: 10px 0;
+    font-size: 15px;
+    color: #555;
+}
+
+.user-card p:first-child {
+    font-weight: 600;
+    color: #222;
+}
+
+.user-card p:last-child {
+    font-weight: 600;
+    color: #2563eb;
+}
