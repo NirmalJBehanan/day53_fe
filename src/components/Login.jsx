@@ -7,7 +7,7 @@ import { toast } from 'react-toastify'
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const Login = ({ setislogged, islogged }) => {
-  const [loading, setisloading] = useState(true)
+  const [loading, setisloading] = useState(false)
   const navigate = useNavigate()
   const formik = useFormik({
     initialValues: {
@@ -27,6 +27,7 @@ const Login = ({ setislogged, islogged }) => {
         setislogged(true)
         formik.resetForm()
         navigate("/")
+        setisloading(true)
       } catch (error) {
         console.log(error)
         toast.error(error.response?.data?.message || "Login failed");
