@@ -21,11 +21,11 @@ const Panel = ({ setActivePage }) => {
                 </div>
 
 
-                <div>
+                {/* <div>
                     <button onClick={() => setActivePage("settings")}>
                         Settings
                     </button>
-                </div>
+                </div> */}
             </nav>
 
         </div>
