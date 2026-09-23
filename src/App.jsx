@@ -10,7 +10,8 @@ import Profile from './components/Profile'
 import ProtectRoute from './components/ProtectRoute'
 import PublicRoute from './components/PublicRoute'
 import Admin from './components/Admin'
-
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const App = () => {
   // const status = localStorage.getItem("islogged")
   const [islogged, setislogged] = useState(false);
@@ -106,6 +107,7 @@ const App = () => {
   return (
     <>
       <RouterProvider router={router} />
+      <ToastContainer />
     </>
   )
 }

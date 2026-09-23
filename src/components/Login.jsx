@@ -22,7 +22,7 @@ const Login = ({ setislogged, islogged }) => {
       setisloading(true)
       try {
         const response = await axios.post("/login", values)
-        
+        toast.success(response.data.message)
         // localStorage.setItem("islogged", "true")
         localStorage.setItem("token", response.data.token)
         setislogged(true)
@@ -53,7 +53,7 @@ const Login = ({ setislogged, islogged }) => {
     <>
 
       <div className='loginFormDiv'>
-        <ToastContainer />
+       
         <form onSubmit={formik.handleSubmit} className='formLogin'>
           <h1>login</h1>
           <div className='loginDivLabelInput'>
