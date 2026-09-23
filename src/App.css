@@ -684,5 +684,60 @@ form button {
     color: #2563eb;
 }
 
+/* ================= ADMIN TABLET ================= */
 
+@media screen and (max-width: 768px) {
+
+  .main-side-panel {
+    width: 180px;
+    padding: 20px 10px;
+  }
+
+  .main-side-panel h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  .main-side-panel nav {
+    gap: 6px;
+  }
+
+  .main-side-panel button {
+    padding: 9px;
+    font-size: 14px;
+  }
+
+  .admin-content {
+    padding: 20px;
+  }
+}
+
+
+/* ================= ADMIN MOBILE ================= */
+
+@media screen and (max-width: 480px) {
+
+  .main-side-panel {
+    width: 120px;
+    padding: 15px 8px;
+  }
+
+  .main-side-panel h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+
+  .main-side-panel nav {
+    gap: 5px;
+  }
+
+  .main-side-panel button {
+    padding: 8px 6px;
+    font-size: 12px;
+  }
+
+  .admin-content {
+    padding: 15px;
+  }
+}
 
