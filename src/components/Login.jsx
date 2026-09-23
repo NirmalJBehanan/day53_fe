@@ -1,12 +1,13 @@
 import axios from 'axios'
 import { useFormik } from 'formik'
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import * as yup from "yup"
 import { toast } from 'react-toastify'
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 const Login = ({ setislogged, islogged }) => {
+  const [loading, setisloading] = useState(true)
   const navigate = useNavigate()
   const formik = useFormik({
     initialValues: {
@@ -29,9 +30,23 @@ const Login = ({ setislogged, islogged }) => {
       } catch (error) {
         console.log(error)
         toast.error(error.response?.data?.message || "Login failed");
+      } finally {
+        setisloading(false)
       }
     }
   })
+  if (loading) {
+    return (
+      <div className="reset-status-container">
+        <div className="reset-status-card">
+          <h1>Verifying...</h1>
+          <p>
+            Please wait while for verification
+          </p>
+        </div>
+      </div>
+    );
+  }
   return (
     <>
 
