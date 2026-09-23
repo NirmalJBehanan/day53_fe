@@ -741,3 +741,57 @@ form button {
   }
 }
 
+
+/* ================= PROFILE TABLET ================= */
+
+@media screen and (max-width: 768px) {
+
+  .profile-card {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .profile-details p {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    word-break: break-word;
+  }
+
+  .profile-details strong {
+    width: 70px;
+    flex-shrink: 0;
+  }
+}
+
+
+/* ================= PROFILE MOBILE ================= */
+
+@media screen and (max-width: 480px) {
+
+  .profile-container {
+    padding: 15px;
+  }
+
+  .profile-card {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .profile-card h1 {
+    font-size: 24px;
+  }
+
+  .profile-details p {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    font-size: 14px;
+  }
+
+  .profile-details strong {
+    width: 60px;
+    flex-shrink: 0;
+  }
+}
+

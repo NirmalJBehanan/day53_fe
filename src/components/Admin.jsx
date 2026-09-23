@@ -81,7 +81,7 @@ const Admin = () => {
             <ToastContainer />
 
             <div className="admin-page">
-
+                
                 <Panel setActivePage={setActivePage} />
 
                 <div className="admin-content">
