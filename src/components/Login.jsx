@@ -22,7 +22,7 @@ const Login = ({ setislogged, islogged }) => {
       setisloading(true)
       try {
         const response = await axios.post("/login", values)
-        toast.success(response.data.message)
+        
         // localStorage.setItem("islogged", "true")
         localStorage.setItem("token", response.data.token)
         setislogged(true)
