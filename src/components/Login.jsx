@@ -19,6 +19,7 @@ const Login = ({ setislogged, islogged }) => {
       password: yup.string().required("password is required").min(5, "minimum 5 dight")
     }),
     onSubmit: async (values) => {
+      setisloading(true)
       try {
         const response = await axios.post("/login", values)
         toast.success(response.data.message)
@@ -27,7 +28,7 @@ const Login = ({ setislogged, islogged }) => {
         setislogged(true)
         formik.resetForm()
         navigate("/")
-        setisloading(true)
+        
       } catch (error) {
         console.log(error)
         toast.error(error.response?.data?.message || "Login failed");
